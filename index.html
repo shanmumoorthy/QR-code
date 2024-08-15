@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="wrapper">
+        <header>
+            <h1>QR Code Generator</h1>
+            <p>Paste a url or enter a text to create a QR code</p>
+        </header>
+        <div class="form">
+            <input type="text" placeholder="Enter text or url" id="textInput">
+            <button onclick="generateQRCode()">Generate QR Code</button>
+        </div>
+        <div class="qr-code" id="qrCode">
+        </div>
+        <button id="downloadButton"onclick="downloadQRCode()"style="display:none">Download QR Code</button>
+        </div>
+        <script src="app.js"></script>
+</body>
+</html>
